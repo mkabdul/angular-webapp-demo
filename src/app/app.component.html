@@ -1,0 +1,12 @@
+<div class="nav-bar">
+  <button [class.active]="view==='table'" (click)="view='table'">
+    Table
+  </button>
+  <button [class.active]="view==='grid'" (click)="view='grid'">
+    Grid
+  </button>
+</div>
+<div class="page-content">
+  <app-table *ngIf="view=='table'"></app-table>
+  <app-grid *ngIf="view=='grid'"></app-grid>
+</div>

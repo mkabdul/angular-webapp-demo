@@ -1,0 +1,21 @@
+<div class="table-container" (scroll)="onScroll($event)">
+  <div *ngFor="let item of itemsList;let ind=index" class="item-box">
+    <div class="sno-box">
+      {{ind+1}}
+    </div>
+    <div class="item-image">
+      <img [src]="item.di_image">
+    </div>
+    <div class="item-title">
+      <div>
+        {{item.title}}
+      </div>
+      <div class="entry-id">
+        {{item.entry_id}}
+      </div>
+    </div>
+  </div>
+  <div class="loading-div" *ngIf="loading">
+    Loading...
+  </div>
+</div>

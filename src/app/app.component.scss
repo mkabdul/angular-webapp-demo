@@ -1,0 +1,41 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 1;
+  height: 100%;
+  overflow: hidden;
+}
+
+.nav-bar {
+  background: #2195f3;
+  padding: 0px 30px;
+
+  button {
+    padding: 10px 30px;
+    background: transparent;
+    border-radius: 0px;
+    color: white;
+    border: 0px;
+    font-size: 15px;
+    outline: none;
+    cursor: pointer;
+    &.active {
+      background: white;
+      color: #2195f3;
+      border-top: 3px solid;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+  }
+}
+
+.page-content {
+    
+    flex-grow: 1;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: #fbfbfb;
+}

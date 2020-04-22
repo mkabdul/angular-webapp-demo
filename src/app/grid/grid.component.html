@@ -1,0 +1,13 @@
+<div class="grid-container" (scroll)="onScroll($event)">
+  <div *ngFor="let item of itemsList" class="item-box">
+    <div class="item-title">
+      {{item.title}}
+    </div>
+    <div class="item-content">
+      <img [src]="item.di_image">
+    </div>
+  </div>
+  <div class="loading-div" *ngIf="loading">
+    Loading...
+  </div>
+</div>
